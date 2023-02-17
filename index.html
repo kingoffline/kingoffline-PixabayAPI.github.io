@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Image search engine</title>
+</head>
+
+<body>
+
+    <div class="searchSection">
+        <h1>Pixabay API Image finder</h2>
+        <form>
+            <label for="SearchInput" id="lable-search">Search: </label>
+            <input type="text" name="search" id="SearchInput" placeholder=" example: Flower">
+            <label for="colors" id="lable-colors">Color: </label>
+            <select name="colors" id="category-options">
+                <option value="">Any color</option>
+                <option value="grayscale">grayscale</option>
+                <option value="transparent">transparent</option>
+                <option value="red">red</option>
+                <option value="orange">orange</option>
+                <option value="yellow">yellow</option>
+                <option value="green">green</option>
+                <option value="turquoise">turquoise</option>
+                <option value="blue">blue</option>
+                <option value="lilac">lilac</option>
+                <option value="pink">pink</option>
+                <option value="white">white</option>
+                <option value="gray">gray</option>
+                <option value="black">black</option>
+                <option value="brown">brown</option>
+            </select>
+            <button type="submit" id="serach-btn">Search</button>
+        </form>
+    </div>
+    <div class="wrapped">
+        <div class="result">
+            <ul id="image-list">
+            </ul>
+        </div>
+    </div>
+    <div class="button-section">
+        <button id="prePageBtn" class="pre-hover">Previous Page</button>
+        <button id="nextPageBtn"class="next-hover">Next Page</button>
+    </div>
+
+</body>
+
+</html>
